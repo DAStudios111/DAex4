@@ -1,0 +1,117 @@
+/* screen - high-seas */
+
+.high-seas {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  width: 1920px;
+}
+
+.high-seas .overlap-group {
+  height: 1080px;
+  position: relative;
+  width: 1920px;
+}
+
+.high-seas .high-seas-gallery-vid {
+  height: 1080px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.high-seas .high-seas-gallery-vid video {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.high-seas .high-seas-gallery-vid img {
+  object-fit: cover;
+}
+
+.high-seas .services {
+  background-image: url(../img/services-10@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  cursor: pointer;
+  height: 78px;
+  left: 30px;
+  position: absolute;
+  top: 956px;
+  transition: all 0.5s ease-in-out;
+  width: 179px;
+}
+
+.high-seas .services:hover {
+  transform: scale(1.1);
+}
+
+.high-seas .home {
+  background-image: url(../img/home@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  cursor: pointer;
+  height: 81px;
+  left: 30px;
+  position: absolute;
+  top: 18px;
+  transition: all 0.5s ease-in-out;
+  width: 179px;
+}
+
+.high-seas .home:hover {
+  transform: scale(1.1);
+}
+
+.high-seas .m-about-us {
+  background-image: url(../img/m-about-us-10@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  cursor: pointer;
+  height: 72px;
+  left: 1684px;
+  position: absolute;
+  top: 962px;
+  transition: all 0.5s ease-in-out;
+  width: 193px;
+}
+
+.high-seas .m-about-us:hover {
+  transform: scale(1.1);
+}
+
+.high-seas .s-contact-us {
+  background-image: url(../img/m-contact-us@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  cursor: pointer;
+  height: 72px;
+  left: 872px;
+  position: absolute;
+  top: 962px;
+  transition: all 0.5s ease-in-out;
+  width: 177px;
+}
+
+.high-seas .s-contact-us:hover {
+  transform: scale(1.1);
+}
+
+.high-seas .gallery {
+  background-image: url(../img/gallery@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  cursor: pointer;
+  height: 134px;
+  left: 1698px;
+  position: absolute;
+  top: 12px;
+  transition: all 0.5s ease-in-out;
+  width: 179px;
+}
+
+.high-seas .gallery:hover {
+  transform: scale(1.1);
+}

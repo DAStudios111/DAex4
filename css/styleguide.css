@@ -1,0 +1,94 @@
+:root { 
+  --dove-gray: #707070;
+  --supernova: #f9ce07;
+  --white: #ffffff;
+ 
+  --font-size-l: 30px;
+  --font-size-m: 20px;
+  --font-size-xl: 31px;
+  --font-size-xxl: 34px;
+  --font-size-xxxl: 40px;
+  --font-size-xxxxl: 42px;
+  --font-size-xxxxxl: 46px;
+ 
+  --font-family-segoe_ui: "Segoe UI", Helvetica;
+  --font-family-segoeui-bold: "SegoeUI-Bold", Helvetica;
+  --font-family-segoeui-italic: "SegoeUI-Italic", Helvetica;
+  --font-family-segoeui-regular: "SegoeUI-Regular", Helvetica;
+  --font-family-segoeui-semibold: "SegoeUI-Semibold", Helvetica;
+}
+.segoeui-regular-normal-supernova-20px {
+  color: var(--supernova);
+  font-family: var(--font-family-segoeui-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.segoeui-semi-bold-supernova-20px {
+  color: var(--supernova);
+  font-family: var(--font-family-segoeui-semibold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.segoeui-bold-supernova-20px {
+  color: var(--supernova);
+  font-family: var(--font-family-segoeui-bold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.segoeui-bold-supernova-31px {
+  color: var(--supernova);
+  font-family: var(--font-family-segoeui-bold);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.segoeui-bold-supernova-13px {
+  color: var(--supernova);
+  font-family: var(--font-family-segoeui-bold);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.segoeui-bold-supernova-15px {
+  color: var(--supernova);
+  font-family: var(--font-family-segoeui-bold);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.segoeui-bold-supernova-40px {
+  color: var(--supernova);
+  font-family: var(--font-family-segoeui-bold);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.segoeui-bold-supernova-54px {
+  color: var(--supernova);
+  font-family: var(--font-family-segoeui-bold);
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.segoeui-bold-supernova-60px {
+  color: var(--supernova);
+  font-family: var(--font-family-segoeui-bold);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.border-1px-dove-gray {
+  border: 1px solid var(--dove-gray);
+}
