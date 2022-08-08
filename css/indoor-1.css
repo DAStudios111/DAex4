@@ -5,18 +5,9 @@
   background-color: var(--white);
   display: flex;
   width: 1920px;
-  height: 1920px;
-
-.tab-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .5s linear;
+  height: max-height ;
 }
 
-
-input[type="radio"]:checked ~ .tab-content {
-  max-height: 10em;
-}
 .indoor-1 .overlap-group {
   height: auto;
   position: relative;
