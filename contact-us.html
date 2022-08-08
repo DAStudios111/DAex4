@@ -94,7 +94,17 @@ $_POST["insert your message here"]. "From: an@email.address");
       </form>
     </div>
      <script>
-  
+  <?php
+
+if($_POST["message"]) {
+
+mail("delta.alphastudios@gmail.com", "Here is the subject line",
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+}
+
+?>
     </script>
   </body>
 </html>
