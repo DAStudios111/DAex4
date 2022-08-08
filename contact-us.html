@@ -1,3 +1,18 @@
+ 
+
+<?php
+
+if($_POST["message"]) {
+
+mail("delta.alphastudios@gmail.com", "Here is the subject line",
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,7 +30,7 @@
   <body style="margin: 0; background: #ffffff">
     <input type="hidden" id="anPageName" name="page" value="contact-us" />
     <div class="container-center-horizontal">
-      <form class="contact-us screen" name="form2" action="mailto:delta.alphastudios@gmail.com" method="get" enctype="text/plain">
+      <form class="contact-us screen" name="form2" action="Submitform.php" method="post" enctype="text/plain">
         <div class="overlap-group7">
           <div class="basic-indoor-sceene">
             <video
@@ -28,15 +43,32 @@
           </div>
           <div class="overlap-group1">
             <div class="ready-to-hit-the-act">
-              Ready to hit the action button on your project?<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email us to fill us in on your vision
+              Ready to hit the action button on your project?<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fill
+              out this quick form to fill us in
             </div>
             <div class="overlap-group-container">
+              <div class="first-name-container">
+                <div class="first-name-box border-1px-dove-gray"></div>
+                <textarea class="first-name" name="first-name" placeholder="First Name" type="text" required></textarea>
+              </div>
+              <div class="last-name-container">
+                <div class="last-name-box border-1px-dove-gray"></div>
+                <textarea class="last-name" name="last-name8" placeholder="Last Name" type="text" required></textarea>
+              </div>
+            </div>
+            <div class="overlap-group4 border-1px-dove-gray">
+              <textarea class="email-address segoeui-bold-supernova-40px" name="email-address" placeholder="@Email Address" type="text" required></textarea>
+            </div>
+            <div class="descri-container">
+              <div class="description-box border-1px-dove-gray"></div>
+              <textarea class="please-describe-your-needs" name="please-describe-your-needs10" placeholder="Please Describe Your Needs" type="text" required></textarea>
+            </div>
             <a href="submit-thank-you.html">
               <div class="submit-button">
                 <div class="submit-container">
-                  <a href="javascript:SubmitForm('form2')" onclick="mailto:delta.alphastudios@gmail.com"
+                  <a href="javascript:SubmitForm('form2')" onclick="Submitform.php"
                     ><img class="submit-blue-box" src="img/submit-blue-box@1x.png" /> </a
-                  ><a href="javascript:SubmitForm('form2')" onclick="mailto:delta.alphastudios@gmail.com"
+                  ><a href="javascript:SubmitForm('form2')" onclick="Submitform.php"
                     ><div class="submit segoeui-bold-supernova-54px">Submit</div>
                   </a>
                 </div>
