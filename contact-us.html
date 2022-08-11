@@ -31,30 +31,7 @@
               Ready to hit the action button on your project?<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fill
               out this quick form to fill us in
             </div>
-            <div class="overlap-group-container">
-              <div class="first-name-container">
-                <div class="first-name-box border-1px-dove-gray"></div>
-                <textarea class="first-name" name="First Name" placeholder="First Name" type="text" required></textarea>
-              </div>
-              <div class="last-name-container">
-                <div class="last-name-box border-1px-dove-gray"></div>
-                <textarea class="last-name" name="Last Name" placeholder="Last Name" type="text" required></textarea>
-              </div>
-            </div>
-            <div class="overlap-group4 border-1px-dove-gray">
-              <textarea class="email-address segoeui-bold-supernova-40px" name="Email Address" placeholder="@Email Address" type="text" required></textarea>
-            </div>
-            <div class="descri-container">
-              <div class="description-box border-1px-dove-gray"></div>
-              <textarea class="please-describe-your-needs" name="Please Describe Your Needs" placeholder="Please Describe Your Needs" type="text" required></textarea>
-            </div>
-            <a href="submit-thank-you.html">
-              <div class="submit-button">
-                <div class="submit-container">
-                  <a href="javascript:SubmitForm('form2')" onclick="mailto:delta.alphastudios@gmail.com"
-                    ><img class="submit-blue-box" src="img/submit-blue-box@1x.png" /> </a
-                  ><a href="javascript:SubmitForm('form2')" onclick="mailto:delta.alphastudios@gmail.com"
-                    ><div class="submit segoeui-bold-supernova-54px">Submit</div>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMe_9sPY_VmOtMWHP3VhflM2G1BWsJLjFDVE4DnqncuDorVw/viewform?embedded=true" width="640" height="786" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                   </a>
                 </div>
               </div></a
@@ -80,22 +57,6 @@
     </div>
      <script>
       
-       if (!HTMLFormElement.prototype.reportValidity) {
-        HTMLFormElement.prototype.reportValidity = function () {
-          if (this.checkValidity()) return true;
-          var btn = document.createElement("button");
-          this.appendChild(btn);
-          btn.click();
-          this.removeChild(btn);
-          return false;
-        };
-      }
-
-      function SubmitForm(form_name) {
-        var form = document.getElementsByName(form_name)[0];
-        if (form.reportValidity()) {
-          form.submit();
-          if (window.submitted) window.submitted();
         }
       }
      
