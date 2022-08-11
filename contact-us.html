@@ -26,9 +26,7 @@
               muted
             ></video>
           </div>
-          <div class="overlap-group1">
-            <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__c1nisJUMjNXRTJYQUpJVUQ2MEgwM0dWQVpMTVI4Ni4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-            
+          <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__c1nisJUMjNXRTJYQUpJVUQ2MEgwM0dWQVpMTVI4Ni4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
                   </a>
                 </div>
               </div></a
@@ -54,6 +52,22 @@
     </div>
      <script>
       
+       if (!HTMLFormElement.prototype.reportValidity) {
+        HTMLFormElement.prototype.reportValidity = function () {
+          if (this.checkValidity()) return true;
+          var btn = document.createElement("button");
+          this.appendChild(btn);
+          btn.click();
+          this.removeChild(btn);
+          return false;
+        };
+      }
+
+      function SubmitForm(form_name) {
+        var form = document.getElementsByName(form_name)[0];
+        if (form.reportValidity()) {
+          form.submit();
+          if (window.submitted) window.submitted();
         }
       }
      
